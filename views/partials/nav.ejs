@@ -1,0 +1,21 @@
+<nav class="nav">
+    <div class="navListDiv navLeftDiv">
+        <a href="" class="navButton">Logo</a>    
+    </div>
+    <div class="navListDiv navMiddleDiv">
+        <a href="" class="navButton">Home</a>
+        <a href="" class="navButton">Add/Check Playlist</a>
+        <a href="" class="navButton">Public Playlists</a>
+    </div>
+    <%if (typeof user === "undefined" || typeof user === "null") {%>
+        <div class="navListDiv navRightDiv">
+            <a href="" class="navButton">Login</a>
+            <a href="" class="navButton">Register</a>
+        </div>
+        <%}else{%>
+            <div class="navListDiv navRightDiv">
+                <a href="" class="navButton">My Playlists</a>
+                <a href="" class="navButton">Account</a>
+            </div>
+            <%}%>
+</nav>

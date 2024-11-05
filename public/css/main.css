@@ -1,0 +1,158 @@
+:root {
+    --background-color: #0F0F0F;
+    --highlight-color: #363636;
+    --text-color: #F1F1F1;
+    --secondary-text-color: #666666;
+    --big-text-font: georgia, arial;
+    --small-text-font: arial, verdana;
+}
+
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    height: 100%;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--big-text-font);
+
+}
+
+p,
+span,
+a,
+div {
+    font-family: var(--small-text-font);
+}
+
+.nav {
+    display: flex;
+    flex: auto;
+    position: fixed;
+    top: 0px;
+    height: 70px;
+    list-style: none;
+    width: 100%;
+    justify-content: center;
+    border-bottom: 1px solid white;
+}
+
+.navListDiv {
+    display: flex;
+    width: 100%;
+}
+
+.navButton {
+    font-size: 25px;
+    height: 100%;
+    padding: 0 20px;
+    line-height: 72px;
+}
+
+
+.navButton {
+    text-decoration: none;
+}
+
+.navMiddleDiv {}
+
+.navRightDiv {
+    justify-content: end;
+}
+
+.navLeftDiv>.navButton {
+    border-right: 1px solid white;
+
+
+}
+
+
+.navRightDiv>.navButton {
+    border-left: 1px solid white;
+
+}
+
+.navMiddleDiv>.navButton {
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+
+}
+
+.inputDiv {}
+
+.hiddenByDefault {
+    display: none;
+}
+
+.main {
+    display: flex;
+    height: 100%;
+    outline: 1px solid red;
+}
+
+.flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.titleDiv {}
+
+.mainToolDiv {
+    margin: 100px;
+}
+
+.mainButtonsDiv {
+margin: 0 20px;
+}
+
+.mainButton {
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 100px;
+    width: 80%;
+    text-align: center;
+    margin: 10px;
+}
+
+.mainButton:hover {
+    background-color: var(--highlight-color);
+    cursor: pointer;
+}
+
+.titleDiv>h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.noTextDecoration{
+    text-decoration: none;
+}

@@ -1,0 +1,32 @@
+<%- include("partials/header.ejs" ,{title:"title"}) %>
+
+    <main class="main flexCenter flexColumn">
+        <div class="titleDiv flexBottom">
+            <h1>Youtube Playlist Checker</h1>
+
+            <h3>Add a public or unlisted youtube playlist and we'll tell you what video was deleted!</h3>
+        </div>
+        <div class="mainToolDiv ">
+            <div class="inputDiv hiddenByDefault" id="urlInputDiv">
+                <label for="">Enter Youtube Playlist URL:</label>
+                <input type="text" name="playlistURL" id="" placeholder="Youtube Playlist URL">
+            </div>
+
+            <div class="flexCenter flexRow">
+                <div class="mainButtonsDiv guestDiv flexRow">
+                    <div class="mainButton flexCenter" onclick="showURLInput()">Add Playlist</div>
+                    <div class="mainButton flexCenter" onclick="showURLInput()">Check A Playlist</div>
+                    <a href="/youtubePlaylist/showPlaylistList" class="mainButton flexCenter noTextDecoration" onclick="">See Public Playlists</a>
+                    <a href="/user/login" class="mainButton flexCenter noTextDecoration" onclick="">Login</a>
+                    <a href="/user/register" class="mainButton flexCenter noTextDecoration" onclick="">Register</a>
+                </div>
+                
+
+            </div>
+
+        </div>
+        <br><br>
+
+    </main>
+
+    <%- include("partials/footer.ejs") %>
